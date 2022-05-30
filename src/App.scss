@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primary: #e6bc2f;
+$borderColor: lightgray;
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: $primary;
+    padding: 1em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.pill {
+    font-size: 12px;
+    background: $primary;
+    margin-right: 1em;
+}
+
+.pill-md {
+    background: $primary;
+    margin-right: 1em;
+}
+
+.play-container {
+    padding: 2em;
+    border: 1px solid $borderColor;
+    margin-bottom: 1em;
+
+    input {
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* https://codepen.io/travishorn/pen/RdPLwj */
+.col {
+    color: black;
+    padding: 1rem;
+    /*height: 4rem;*/
+    border: 1px solid $borderColor;
+}
+  
+.rows-lg-4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.rows-lg-6 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.col a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.btn-primary {
+  background-color: #30a7d7; 
+  border: none;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px 32px;
+  border-radius: 5px;
+}
+
+.text-center {
+   text-align: center;
+}
